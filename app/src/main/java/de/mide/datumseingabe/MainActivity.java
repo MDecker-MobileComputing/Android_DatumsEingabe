@@ -8,8 +8,8 @@ import android.widget.Toast;
 
 
 /**
- * App zur Demonstration UI-Element "DatePicker", mit dem
- * Datums-Werte in einem Kalender oder mit Rollen ausgewählt
+ * App zur Demonstration Event-Handling für UI-Element "DatePicker",
+ * mit dem Datums-Werte in einem Kalender oder mit Rollen ausgewählt
  * werden können.
  * <br/><br/>
  *
@@ -30,7 +30,7 @@ public class MainActivity extends Activity
 
         setContentView( R.layout.datums_activity );
 
-        DatePicker datePicker = (DatePicker) findViewById(R.id.d1);
+        DatePicker datePicker = findViewById(R.id.d1);
 
         // "this" als Event-Handler-Objekt setzen und initiales Datum definieren.
         datePicker.init(2018, 10, 12, this); // 12. November (!) 2018
@@ -38,8 +38,8 @@ public class MainActivity extends Activity
 
 
     /**
-     * Event-Handler-Methode für DatePicker-Element.
-     * Einzige Methode aus Interface {@link OnDateChangedListener}.
+     * Event-Handler-Methode für DatePicker-Element;
+     * einzige Methode aus Interface {@link OnDateChangedListener}.
      *
      * @param view  UI-Element, welches das Event ausgelöst hat.
      * 
