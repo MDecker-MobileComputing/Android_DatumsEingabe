@@ -11,7 +11,7 @@ import android.widget.Toast;
  * App zur Demonstration Event-Handling für UI-Element "DatePicker",
  * mit dem Datums-Werte in einem Kalender oder mit Rollen ausgewählt
  * werden können.
- * <br/><br/>
+ * <br><br>
  *
  * This project is licensed under the terms of the BSD 3-Clause License.
  */
@@ -26,6 +26,7 @@ public class MainActivity extends Activity
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+		
         super.onCreate(savedInstanceState);
 
         setContentView( R.layout.datums_activity );
