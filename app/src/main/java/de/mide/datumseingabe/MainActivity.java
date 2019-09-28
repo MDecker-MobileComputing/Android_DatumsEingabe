@@ -34,7 +34,8 @@ public class MainActivity extends Activity
         DatePicker datePicker = findViewById(R.id.d1);
 
         // "this" als Event-Handler-Objekt setzen und initiales Datum definieren.
-        datePicker.init(2018, 10, 12, this); // 12. November (!) 2018
+        datePicker.init(2019, 8, 28, this);
+        // 26.09.2019 (monthOfYear is 0-basiert)
     }
 
 
@@ -56,7 +57,7 @@ public class MainActivity extends Activity
 
         String toastText = null;
 
-        if (year >= 2019) {
+        if (year >= 2020) {
 
             toastText = "Erst im nächsten Jahr";
 
