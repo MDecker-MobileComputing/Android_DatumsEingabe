@@ -31,11 +31,11 @@ public class MainActivity extends Activity
 
         setContentView( R.layout.datums_activity );
 
-        DatePicker datePicker = findViewById(R.id.d1);
+        DatePicker datePicker = findViewById( R.id.d1 );
 
         // "this" als Event-Handler-Objekt setzen und initiales Datum definieren.
-        datePicker.init(2019, 8, 28, this);
-        // 26.09.2019 (monthOfYear is 0-basiert)
+        datePicker.init(2019, 8, 26, this);
+        // 26. September 2019 (monthOfYear is 0-basiert: 8 => September)
     }
 
 
@@ -59,7 +59,7 @@ public class MainActivity extends Activity
 
         if (year >= 2020) {
 
-            toastText = "Erst im nächsten Jahr";
+            toastText = "Erst im nächsten Jahr.";
 
         } else {
 
