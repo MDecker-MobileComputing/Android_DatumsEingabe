@@ -19,10 +19,7 @@ public class MainActivity extends Activity
                           implements OnDateChangedListener {
 
     /**
-     * Lifecycle-Methode.
-     * Nach dem Laden der Layout-Datei wird die Activity-Instanz
-     * selbst als Event-Handler-Objekt gesetzt, wobei auch das
-     * initial anzuzeigende Datum bestimmt wird.
+     * Lifecycle-Methode zur Initialisierung des Activity-Objekts.
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +31,7 @@ public class MainActivity extends Activity
         DatePicker datePicker = findViewById( R.id.d1 );
 
         // "this" als Event-Handler-Objekt setzen und initiales Datum definieren.
-        datePicker.init(2019, 8, 26, this);
+        datePicker.init(2020, 8, 28, this);
         // 26. September 2019 (monthOfYear is 0-basiert: 8 => September)
     }
 
@@ -57,7 +54,7 @@ public class MainActivity extends Activity
 
         String toastText = null;
 
-        if (year >= 2020) {
+        if (year > 2020) {
 
             toastText = "Erst im nächsten Jahr.";
 
