@@ -28,7 +28,7 @@ public class MainActivity extends Activity
 
         setContentView( R.layout.datums_activity );
 
-        DatePicker datePicker = findViewById(R.id.d1);
+        DatePicker datePicker = findViewById( R.id.d1 );
 
         datePicker.init(2020, 8, 28, this); // 8=September
     }
@@ -54,7 +54,7 @@ public class MainActivity extends Activity
 
         if (year > 2020) {
 
-            toastText = "Erst im nächsten Jahr";
+            toastText = "Erst im nächsten Jahr.";
 
         } else {
 
